@@ -7,8 +7,8 @@ export default function Product({ product }) {
         <div className="mx-auto flex flex-col sm:flex-row">
           <img
             alt="property"
-            width={560}
-            height={640}
+            width={640}
+            height={560}
             src={product.property_image}
           />
           <div className="mt-10 flex flex-col sm:mt-0 sm:ml-10">
@@ -16,7 +16,7 @@ export default function Product({ product }) {
               {product.title}
             </h1>
             <h1 className="mt-3 text-4xl font-bold text-gray-500 sm:text-3xl sm:tracking-tight lg:text-3xl">
-              ${product.price}
+              {product.price} LKR
             </h1>
             <div className="mt-10 mb-5 border-t border-gray-200 pt-10 font-bold">
               Description
